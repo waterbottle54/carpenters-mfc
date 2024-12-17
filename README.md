@@ -5,19 +5,19 @@
  
  3D 모델 설계 (3D Model Design) | 매개변수 곡면(Parametric Surfaces)
 :-----------------------------:|:------------------------:
-![](https://github.com/waterbottle54/capenters-mfc/blob/main/screenshots/car.png) | ![](https://github.com/waterbottle54/capenters-mfc/blob/main/screenshots/dialog.png)
+![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/car.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/dialog.png)
 
  아핀 변환 (Affine Transformation) | 데이터 보존(Serialization)
 :-----------------------------:|:------------------------:
-![](https://github.com/waterbottle54/capenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/serialization.png)
+![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/serialization.png)
 
  아핀 변환 (Affine Transformation) | 데이터 보존(Serialization)
 :-----------------------------:|:------------------------:
-![](https://github.com/waterbottle54/capenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/serialization.png)
+![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/serialization.png)
 
  응용 - 레이싱 게임 제작에 위 모델 사용 (Applied case) |
 :-----------------------------:|
-![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/dashboard.png)
+![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/dashboard.png)
 
  * **Carpenter**는 **MFC / C++** 로 작성된 **Desktop** 3D 모델 설계 소프트웨어입니다.<br>.
 
