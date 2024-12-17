@@ -11,10 +11,6 @@
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/serialization.png)
 
- 아핀 변환 (Affine Transformation) | 데이터 보존(Serialization)
-:-----------------------------:|:------------------------:
-![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/serialization.png)
-
  응용 - 레이싱 게임 제작에 위 모델 사용 (Applied case) |
 :-----------------------------:|
 ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/dashboard.png)
