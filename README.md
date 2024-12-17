@@ -26,7 +26,6 @@
 > ### Modeling
 > * 매개변수 곡면 벡터함수 S(u, v)를 이용해 다양한 곡면을 생성한다.
 > * 3차원 아핀 변환을 적용하여 응용한다. (ex. 원 -> 타원)
-> * 
 > ### Etc.
 > * 프로젝트 파일 및 모델 파일을 저장, 불러오기(Serialization) 할 수 있다.
 
@@ -45,7 +44,7 @@
  
 > ### 3D Graphics
 > * 3D 렌더링에 OpenGL을 사용하였다.
-> * Lighting, Unprojection 등의 기법이 사용되었다.
+> * Normal vector lighting, Unprojection 등의 기법이 사용되었다.
 
  ## Author
  * 조성원 (Sung Won Jo)
@@ -56,14 +55,3 @@
    
      📹 [YouTube Channel](https://github.com/waterbottle54)
    
- <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-about.png" alt="My Image" width="70%">
-
- ## Version History
- * **1.01** (2023.4): 종양 렌더링 기능 구현
-   
- * **1.02** (2023.5): 종양 성장 패턴 analyze 기능 구현
-
- * **1.03** (2024.12): 종양 경계 auto detection 구현
-
-
-
