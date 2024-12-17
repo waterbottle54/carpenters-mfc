@@ -11,6 +11,10 @@
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/transformation.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/serialization.png)
 
+ 사원수(quaternion) 회전 | GL Rendering 
+:-----------------------------:|:------------------------:
+![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/matrix.png) | ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/gl.png)
+
  응용 - 레이싱 게임 제작에 위 모델 사용 (Applied case) |
 :-----------------------------:|
 ![](https://github.com/waterbottle54/carpenters-mfc/blob/main/screenshots/dashboard.png)
