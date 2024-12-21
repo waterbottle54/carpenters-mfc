@@ -1,0 +1,461 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#include ""res\\Carpenter.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Carpenter.ico"
+
+IDR_CarpenterTYPE       ICON                    "res\\CarpenterDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "New (&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "Open (&O)...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM "Save (&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "Save As (&A)...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Latest Files",                ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "Quit (&X)",                   ID_APP_EXIT
+    END
+    POPUP "Edit(&E)"
+    BEGIN
+        MENUITEM "Create\t Enter",              ID_EDIT_CREATE
+        MENUITEM "Copy\tInsert",                ID_EDIT_COPY
+        MENUITEM "Remove\t Delete",             ID_EDIT_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\tTab",             ID_EDIT_SELECT_ALL
+        MENUITEM "Find",                        ID_EDIT_FIND
+    END
+    POPUP "Transfrom(&T)"
+    BEGIN
+        MENUITEM "Translation\tF1",             ID_TRANSFORM_TRANSLATION
+        MENUITEM "Rotation\tF2",                ID_TRANSFORM_ROTATION
+        MENUITEM "Scaling\tF3",                 ID_TRANSFORM_SCALING
+        MENUITEM SEPARATOR
+        MENUITEM "Precisely\tCtrl",             ID_TRANSFORM_PRECISELY
+        MENUITEM "Centered\tSpace",             ID_TRANSFORM_CENTERED
+    END
+    POPUP "Build(&B)"
+    BEGIN
+        MENUITEM "Build Data File\tCtrl+B",     ID_BUILD_DATA_FILE
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Carpenter Information(&A)...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EDIT_CREATE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_REMOVE,         VIRTKEY, NOINVERT
+    VK_TAB,         ID_EDIT_SELECT_ALL,     VIRTKEY, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_TRANSFORM_ROTATION,  VIRTKEY, NOINVERT
+    VK_F3,          ID_TRANSFORM_SCALING,   VIRTKEY, NOINVERT
+    VK_F1,          ID_TRANSFORM_TRANSLATION, VIRTKEY, NOINVERT
+    "B",            ID_BUILD_DATA_FILE,     VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Carpenter 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "Carpenter, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 조성원",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SURFACE DIALOGEX 0, 0, 587, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Surface"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,288,153,50,14
+    PUSHBUTTON      "취소",IDCANCEL,530,153,50,14
+    EDITTEXT        IDC_EDIT_NAME,18,22,116,12,ES_AUTOHSCROLL
+    GROUPBOX        "Name",IDC_STATIC,7,7,137,39
+    GROUPBOX        "Color",IDC_STATIC,7,56,137,58
+    COMBOBOX        IDC_COMBO_COLOR,18,76,116,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_RED,18,91,38,12,ES_AUTOHSCROLL
+    GROUPBOX        "Parametric function",IDC_STATIC,155,7,229,107
+    EDITTEXT        IDC_EDIT_X,187,21,188,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_Y,187,35,188,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_Z,187,49,188,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    CTEXT           "x(u,v)",IDC_STATIC,155,21,32,12,SS_CENTERIMAGE
+    CTEXT           "y(u,v)",IDC_STATIC,155,35,32,12,SS_CENTERIMAGE
+    CTEXT           "z(u,v)",IDC_STATIC,155,49,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_U_NUM,324,70,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_V_NUM,324,87,51,14,ES_AUTOHSCROLL
+    CTEXT           "u",IDC_STATIC,155,70,32,14,SS_CENTERIMAGE
+    CTEXT           "v",IDC_STATIC,155,87,32,14,SS_CENTERIMAGE
+    CTEXT           "~",IDC_STATIC,239,70,14,14,SS_CENTERIMAGE
+    CTEXT           "~",IDC_STATIC,240,87,13,14,SS_CENTERIMAGE
+    CTEXT           "n",IDC_STATIC,305,70,18,14,SS_CENTERIMAGE
+    CTEXT           "n",IDC_STATIC,305,87,17,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_GREEN,57,91,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BLUE,96,91,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_U_MAX,253,70,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_V_MAX,253,87,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_U_MIN,188,70,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_V_MIN,187,87,52,14,ES_AUTOHSCROLL
+    GROUPBOX        "Transformation",IDC_STATIC,394,7,186,107
+    EDITTEXT        IDC_EDIT_MAT11,404,22,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT12,446,22,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT13,488,22,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT14,530,22,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT21,404,36,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT22,446,36,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT23,488,36,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT24,530,36,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT31,404,49,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT32,446,49,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT33,488,49,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT34,530,49,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT41,404,63,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT42,446,63,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT43,488,63,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAT44,530,63,36,14,ES_AUTOHSCROLL
+    CTEXT           "origin",IDC_STATIC,394,85,34,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ORG_Y,475,85,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORG_X,428,85,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORG_Z,522,85,44,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "Carpenter"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Carpenter.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "Carpenter.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SURFACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 580
+        VERTGUIDE, 394
+        VERTGUIDE, 428
+        VERTGUIDE, 566
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+        HORZGUIDE, 76
+        HORZGUIDE, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SURFACE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_BUTTON_CREATE
+    BUTTON      ID_BUTTON_COPY
+    BUTTON      ID_BUTTON_REMOVE
+    SEPARATOR
+    BUTTON      ID_BUTTON_TRANSLATION
+    BUTTON      ID_BUTTON_ROTATION
+    BUTTON      ID_BUTTON_SCALING
+    BUTTON      ID_BUTTON_PRECISELY
+    BUTTON      ID_BUTTON_CENTERED
+    SEPARATOR
+    BUTTON      ID_BUTTON_BUILD
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "res\\toolbar1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Carpenter\n\nCarpenter\n\n\nCarpenter.Document\nCarpenter.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Carpenter"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "활성 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "활성 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "활성 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호 및 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#include "res\Carpenter.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
